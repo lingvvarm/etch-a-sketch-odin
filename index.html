@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <header>
+        <p class="header">Etch-a-sketch</p>
+        <a href="https://github.com/lingvvarm">
+            <div class="github-link">
+                lingvvarm
+                <img src="img/github.png" alt="github-logo" class="github-logo">
+            </div>
+        </a>
+    </header>
+
+
+    <div class="content">
+        <div class="buttons">
+            <input type="color" class="pick-color">
+            <button class="control-btn color-mode activable">Color mode</button>
+            <button class="control-btn erase-mode activable">Erase mode</button>
+            <button class="control-btn rainbow-mode activable">Rainbow mode</button>
+            <button class="control-btn shadow-mode activable">Shadow mode</button>
+            <button class="control-btn clear">Clear</button>
+            <div class="slide-container">
+                <div class="slide-label">16 x 16</div>
+                <input type="range" min="1" max="60" value="16" class="slider" id="myRange">
+              </div>
+            <div>
+                <input type="checkbox" class="show-grid" name="show-grid" checked>
+                <label for="show-grid" class="grid-label">Show grid</label>
+            </div>
+        </div>
+        <div class="whiteboard"></div>
+    </div>
+
+    <style> body{ background-Color : #222831 } </style>
+    <script src="script.js"></script>
+</body>
+</html>
